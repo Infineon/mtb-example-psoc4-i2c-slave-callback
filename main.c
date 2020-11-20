@@ -38,7 +38,6 @@
 * indemnify Cypress against all liability.
 *******************************************************************************/
 
-
 /* Header file includes */
 #include "cy_pdl.h"
 #include "cybsp.h"
@@ -151,7 +150,7 @@ int main(void)
 
     /*  Enable interrupt and I2C block */
     NVIC_EnableIRQ((IRQn_Type) CYBSP_I2C_SCB_IRQ_config.intrSrc);
-    Cy_SCB_I2C_Enable(CYBSP_I2C_HW);
+    Cy_SCB_I2C_Enable(CYBSP_I2C_HW, &CYBSP_I2C_context);
 
     /* Enable global interrupts */
     __enable_irq();

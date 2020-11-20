@@ -45,12 +45,12 @@
         <Property id="NUM_CENTROIDS" value="1"/>
     </GeneralProperties>
     <CsdProperties>
-        <Property id="CSD_AUTOTUNE" value="HWTH"/>
+        <Property id="CSD_AUTOTUNE" value="DISABLE"/>
         <Property id="CSD_MOD_CLK_DIVIDER" value="1"/>
         <Property id="CSD_INACTIVE_SNS_CONNECTION" value="GROUND"/>
         <Property id="CSD_CHARGE_TRANSFER" value="SOURCING"/>
         <Property id="CSD_IDAC_ROW_COL_ALIGN_EN" value="true"/>
-        <Property id="CSD_IDAC_AUTOCAL_EN" value="true"/>
+        <Property id="CSD_IDAC_AUTOCAL_EN" value="false"/>
         <Property id="CSD_IDAC_AUTOGAIN_EN" value="true"/>
         <Property id="CSD_IDAC_GAIN_INIT_INDEX" value="GAIN_2400"/>
         <Property id="CSD_IDAC_MIN" value="20"/>
@@ -98,7 +98,7 @@
                 <Property id="TX_CLK" value="120"/>
                 <Property id="TX_CLK_SOURCE" value="DIRECT"/>
                 <Property id="RESOLUTION" value="RES12BIT"/>
-                <Property id="NUM_CONV" value="100"/>
+                <Property id="NUM_CONV" value="75"/>
                 <Property id="IDAC_MOD0" value="32"/>
                 <Property id="IDAC_MOD1" value="32"/>
                 <Property id="IDAC_MOD2" value="32"/>
@@ -200,7 +200,7 @@
                 <Property id="TX_CLK" value="120"/>
                 <Property id="TX_CLK_SOURCE" value="DIRECT"/>
                 <Property id="RESOLUTION" value="RES12BIT"/>
-                <Property id="NUM_CONV" value="100"/>
+                <Property id="NUM_CONV" value="50"/>
                 <Property id="IDAC_MOD0" value="32"/>
                 <Property id="IDAC_MOD1" value="32"/>
                 <Property id="IDAC_MOD2" value="32"/>
@@ -302,7 +302,7 @@
                 <Property id="TX_CLK" value="120"/>
                 <Property id="TX_CLK_SOURCE" value="DIRECT"/>
                 <Property id="RESOLUTION" value="RES12BIT"/>
-                <Property id="NUM_CONV" value="100"/>
+                <Property id="NUM_CONV" value="40"/>
                 <Property id="IDAC_MOD0" value="32"/>
                 <Property id="IDAC_MOD1" value="32"/>
                 <Property id="IDAC_MOD2" value="32"/>
@@ -511,14 +511,6 @@
                 <Electrode id="Sns4" kind="Sensor">
                     <ElectrodeProperties>
                         <Property id="IDAC0" value="10"/>
-                        <Property id="IDAC1" value="32"/>
-                        <Property id="IDAC2" value="32"/>
-                        <Property id="PINS" value="Dedicated pin"/>
-                    </ElectrodeProperties>
-                </Electrode>
-                <Electrode id="Sns5" kind="Sensor">
-                    <ElectrodeProperties>
-                        <Property id="IDAC0" value="32"/>
                         <Property id="IDAC1" value="32"/>
                         <Property id="IDAC2" value="32"/>
                         <Property id="PINS" value="Dedicated pin"/>
