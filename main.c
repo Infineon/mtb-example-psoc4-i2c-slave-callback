@@ -8,7 +8,7 @@
 *
 *
 *******************************************************************************
-* Copyright 2020-2021, Cypress Semiconductor Corporation (an Infineon company) or
+* Copyright 2020-2022, Cypress Semiconductor Corporation (an Infineon company) or
 * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
 *
 * This software, including source code, documentation and related
@@ -74,7 +74,7 @@
 *******************************************************************************/
 void sI2C_InterruptHandler(void);
 static void ExecuteCommand(void);
-static void SlaveCallback(uint32 event);
+static void SlaveCallback(uint32_t event);
 
 
 /*******************************************************************************
